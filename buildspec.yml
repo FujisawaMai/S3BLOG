@@ -13,4 +13,4 @@ phases:
       - ./hugo
   post_build:
     commands:
-      - aws s3 sync --exact-timestamps public s3://kotororo.net 
+      - aws s3 sync --exact-timestamps --include '*' public s3://kotororo.net 
