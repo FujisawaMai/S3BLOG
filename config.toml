@@ -68,11 +68,10 @@ page = "" # Twitter page username
 titleSeparator = "•"
 
 [params.social]
-github = "MunifTanjim"
-twitter = "MunifTanjim"
+twitter = "pistachiyoda"
 
 [params.social.config]
-platforms = ["github","twitter"]
+platforms = ["twitter"]
 
 [taxonomies]
 author = "authors"
