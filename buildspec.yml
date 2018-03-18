@@ -3,6 +3,7 @@ version: 0.2
 phases:
   install:
     commands:
+      - git submodule update --init --recursive
       - wget https://github.com/gohugoio/hugo/releases/download/v0.37.1/hugo_0.37.1_Linux-64bit.tar.gz
       - tar -zxvf hugo_0.37.1_Linux-64bit.tar.gz
   pre_build:
