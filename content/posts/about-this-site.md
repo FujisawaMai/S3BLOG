@@ -22,6 +22,6 @@ PN：ぴすたちよだ
 - AWS solution architect associate
 - TOEIC 875
 - LPIC101
-- ファイナンシャルプランナーP3級
+- ファイナンシャルプランナー3級
 
 サイト開設日　2018年3月18日
