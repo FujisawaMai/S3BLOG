@@ -57,7 +57,7 @@ http-serverというコマンドラインを使います。
     {"id":"4","name":"高田"}
 ]
 ```
-
+   
 ```index.html
 <html>
     <head>
