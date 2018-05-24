@@ -1,5 +1,5 @@
 ---
-title: "はじめてのCognito!CognitoのログインUIを使って認証システムを実装したまとめ"
+title: "はじめてのCognito! CognitoのログインUIを使って認証システムを実装したまとめ"
 date: 2018-05-20T23:53:39+09:00
 draft: false
 tags: ["AWS","S3","Cognito","CloudFront"]
@@ -36,7 +36,7 @@ OAuth2.0とは、あるクライアントアプリが、あるIDプロバイダ�
 1. ユーザがCognitoにより認可されたら、ログイン後ページへ変移する
 2. アーティスト名を入力すると、DynamoDBに格納されている、私が一番好きなそのアーティストの曲が表示される
 
-![180520_cognite_first_step_7](/images/180520_cognite_first_step_7.png)
+![180520_cognite_first_step_10](/images/180520_cognite_first_step_10.png)
 
 アプリの構成、各サービスの役割こんな感じです。
 
@@ -46,6 +46,8 @@ OAuth2.0とは、あるクライアントアプリが、あるIDプロバイダ�
 - **Cognito User Pool**
 
   CognitoのUser Poolでは、その名の通り、ユーザを管理し、ユーザのサインイン、サインアップの設定ができます。また、Cognito独自のログインUIの設定、アプリクライアント（この場合はS3の静的コンテンツ）の設定等ができる。
+
+  Cognito独自のログインUIがあるのは便利ですよね。
 
 - **Cognito Identity Pool**
 
@@ -295,4 +297,4 @@ CloudFrontを使ってhttps通信をするには、BehaviorのViewer Protocol Po
 
 ![180520_cognite_first_step_9](/images/180520_cognite_first_step_9.png)
 
-わからないことが多すぎてお世話になっているメンターさんにたくさん助けていただきました…認証や認可、OAuth2のフローなど、学ぶことが多いサンプルアプリでした。
+わからないことが多すぎてお世話になっているメンターさんにたくさん助けていただきました…。認証や認可、OAuth2のフローなど、JavaScriptのことなど、学ぶことが多いサンプルアプリでした。
