@@ -3,7 +3,11 @@ title: "ローカルにNode.jsでサーバーをたててAjaxを体験したい"
 date: 2018-04-18T21:16:58+09:00
 draft: false
 tags: ["Node.js"]
+thumbnailImage: /images/180414_ajax_experience/computer_note_good.png
 ---
+この記事ではローカルにNode.jsのコマンドラインでサーバーをたててAjaxを体験する方法をメモしています。
+<!--more-->
+
 # 1.記事概要
 
 最近、あるアレクサアプリをExpressやNode.jsやDyanmoDB、などなどで作ろうとするも、それぞれの技術理解が中途半端で全体的によくわからなくなってきてしまったため、いきなりアプリを作るのではなく、アプリ制作に必要な要素、技術をひとつずつ理解していこう、という結論に至りました。
@@ -15,6 +19,7 @@ tags: ["Node.js"]
 # 2.Ajaxって？
 
 Asynchronous JavaScript + XMLの略で、JavaScriptがサーバーと通信した結果を使ってHTMLを操作するのがAjaxです。非常によく使われるのがGoogle Mapの例で、Ajaxにより以下のプロセスでインタラクティブなレスポンスが実現できます。
+
 
 1. Google Mapでユーザーが地図を動かす
 2. 動かした先の地図の情報をサーバーに取得しにいく
@@ -39,7 +44,7 @@ http-serverというコマンドラインを使います。
 > http-server [path] [options]
 ```
 
-これにより、http://localhost:8080でサーバーにアクセスできます。
+これにより、http://localhost:8080 でサーバーにアクセスできます。
 
 詳細は[公式](https://www.npmjs.com/package/http-server)を参照ください。
 
@@ -49,7 +54,8 @@ http-serverというコマンドラインを使います。
 
 メンバーはこんな感じで。
 
-```member_info.json
+
+```json:member_info.json
 [
     {"id":"1","name":"山田"},
     {"id":"2","name":"佐藤"},
@@ -57,8 +63,10 @@ http-serverというコマンドラインを使います。
     {"id":"4","name":"高田"}
 ]
 ```
-   
-```index.html
+
+そして、入力フォームをHTMLで作成します。
+ 
+```html:index.html
 <html>
     <head>
         <title>example</title>
@@ -72,7 +80,9 @@ http-serverというコマンドラインを使います。
 </html>
 ```
 
-```app.js
+AjaxによるHTTPリクエストでjsonデータを取得する処理を作成します。
+
+```javascript:app.js
 function btnclick(){
     var id = document.getElementById("id").value;
     //XMLHttpRequestオブジェクトを作る
@@ -95,9 +105,21 @@ function btnclick(){
 }
 ```
 
-こんな感じになります。
-![ajax_experience_1.PNG](/images/ajax_experience_1.PNG)
 
-↓
+# 5.こんな感じになります。
 
-![ajax_experience_2.PNG](/images/ajax_experience_2.PNG)
+上記の3.で記載していたように、アプリの実行のためhttp-serverを実行します。
+
+```
+> http-server [path] [options]
+``
+
+そうすると、以下が表示され、値を入力すると…
+
+![ajax_experience_1.png](/images/ajax_experience_1.png)
+
+　　　　　　↓↓↓
+
+こんな感じで、IDに対応したメンバーがアラートで表示されます。
+
+![ajax_experience_2.PNG](/images/ajax_experience_2.png)

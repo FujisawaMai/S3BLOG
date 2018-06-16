@@ -3,7 +3,11 @@ title: "EmbulkでS3のcsvデータをRDSにインポートする"
 date: 2018-03-21T20:53:48+09:00
 draft: false
 tags: ["AWS","S3","RDS","EC2","Embulk"]
+thumbnailImage: /images/embulk.png
 ---
+
+Embulkは便利なツールで、覚えて置いたら今後なにかの役に立つかもしれないので、今回実施したテストの手順をひらたくまとめておこうと思います。
+<!--more-->
 
 # 1.実施背景と記事概要
 

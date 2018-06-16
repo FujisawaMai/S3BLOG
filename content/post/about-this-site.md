@@ -3,9 +3,12 @@ title: "このサイトについて"
 date: 2018-03-18T21:16:58+09:00
 draft: false
 tags: ["About"]
+thumbnailImage: /images/180318_About/animal_hamster.png
 ---
 
 このサイトは、文系大卒の私がこつこつがんばって一人前のエンジニアを目指す日々をづづる個人サイトです。
+
+<!--more-->
 
 ## 自己紹介
 

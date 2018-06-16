@@ -1,9 +1,12 @@
 ---
 title: "AWSサービスの使用料を、コストと使用状況レポートとQuicksightを使って継続的に自動で可視化する"
 date: 2018-03-19T21:16:58+09:00
+thumbnailImage: /images/kousei.png
 draft: false
 tags: ["AWS","QuickSight","S3","Lambda"]
 ---
+AWSサービスの使用料を、長期的に、カスタマイズされた形で確認するために、コストと使用状況レポートとQuicksightを使って継続的に自動的に可視化してみようと思います。
+<!--more-->
 
 # １．目的
 

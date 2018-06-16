@@ -3,11 +3,15 @@ title: "はじめてのCognito! CognitoのログインUIを使って認証シス
 date: 2018-05-20T23:53:39+09:00
 draft: false
 tags: ["AWS","S3","Cognito","CloudFront"]
+thumbnailImage: /images/180520_cognite_first_step_1.png
 ---
+
+業務でCognitoを軽く触ることになったので、その練習用にサンプルアプリを作りました。
+<!--more-->
 
 # 1.記事概要
 
-業務でCognitoを軽く触ることになったので、その練習用にサンプルアプリを作りました。AWSのチュートリアルをベースに、サンプルアプリの作り方と、引っ掛かりそうなところをまとメモしておきます。
+AWSのチュートリアルをベースに、サンプルアプリの作り方と、引っ掛かりそうなところをまとメモしておきます。
 
 # 2.Cognitoって？
 
